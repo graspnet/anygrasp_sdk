@@ -1,0 +1,29 @@
+{
+    "version": "2.8",
+    "feature_id": "15189294542147360485",
+    "public_key": "ai_123.public_key",
+    "signature": "ai_123.signature",
+    "license": "ai_123.lic",
+    "toolbox": [
+        {
+            "name": "Production",
+            "type": "PERMANENT",
+            "data": ""
+        },
+        {
+            "name": "Research",
+            "type": "PERMANENT",
+            "data": ""
+        },
+        {
+            "name": "Demo",
+            "type": "PERMANENT",
+            "data": ""
+        },
+        {
+            "name": "Example_DO_NO_MODIFY",
+            "type": "TIME_LIMITED",
+            "data": "2021-01-01_00-00-00 2021-05-31_23-59-59"
+        }
+    ]
+}
