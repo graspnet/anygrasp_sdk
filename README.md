@@ -22,8 +22,8 @@ AnyGrasp SDK for grasp detection & tracking.
     python setup.py install
 ```
 
-4. License Registration
-
+## License Registration
+   
 Get the feature id of your machine and fill in the [chart]() to apply for license. See [license_registration/README.md](license_registration/README.md) for details.
 
 
