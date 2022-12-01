@@ -10,7 +10,7 @@ This demo shows the usage of AnyGrasp detection SDK. Note that `gsnet.so`, `lib_
 
 2. Unzip your license and put the folder here as `license`. Refer to [license_registration/README.md](../license_registration/README.md) if you have not applied for license.
 
-3. Download model weights at [BaiduPan](https://pan.baidu.com/s/1OFmqyjNzMg88WsWZj7ZYJQ) and put it under ``log/``, code please ask Haoshu
+3. Put model weights under ``log/``.
 
 ## Execution
 

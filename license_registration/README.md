@@ -1,6 +1,6 @@
 # License Registration
 
-- Get feature id of target working machine
+- Get the feature id of your working machine.
 ```base
     ./license_checker -f
 ```
@@ -9,10 +9,10 @@
 - You will get a `.zip` file that contains license with time limitation. The folder structure is as follows (see [sample_license](sample_license) for example):
 ```base
     license/
-        |-- licenseCfg.json
-        |-- [discriminator].public_key
-        |-- [discriminator].signature
-        |-- [discriminator].lic
+       |-- licenseCfg.json
+       |-- [discriminator].public_key
+       |-- [discriminator].signature
+       |-- [discriminator].lic
 ```
 - You can check license states via
 ```base

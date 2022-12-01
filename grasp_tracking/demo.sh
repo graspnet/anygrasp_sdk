@@ -1,1 +1,1 @@
-python demo.py --checkpoint_path log/checkpoint_track_graspnetv1_4depth.tar --filter oneeuro
+python demo.py --checkpoint_path log/checkpoint_tracking.tar --filter oneeuro

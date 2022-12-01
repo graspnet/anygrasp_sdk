@@ -1,1 +1,1 @@
-python demo.py --checkpoint_path log/checkpoint_wosmoothed_vdistance_bp.tar --top_down_grasp
+python demo.py --checkpoint_path log/checkpoint_detection.tar --top_down_grasp
