@@ -24,10 +24,12 @@ def demo(data_dir):
     # get data
     colors = np.array(Image.open(os.path.join(data_dir, 'color.png')), dtype=np.float32) / 255.0
     depths = np.array(Image.open(os.path.join(data_dir, 'depth.png')))
+
     # get camera intrinsics
     fx, fy = 927.17, 927.37
     cx, cy = 651.32, 349.62
     scale = 1000.0
+
     # set workspace
     xmin, xmax = -0.19, 0.12
     ymin, ymax = 0.02, 0.15
@@ -37,19 +39,18 @@ def demo(data_dir):
     # get point cloud
     xmap, ymap = np.arange(depths.shape[1]), np.arange(depths.shape[0])
     xmap, ymap = np.meshgrid(xmap, ymap)
-
     points_z = depths / scale
     points_x = (xmap - cx) / fx * points_z
     points_y = (ymap - cy) / fy * points_z
 
-    # set your workspace
+    # remove outlier
     mask = (points_z > 0) & (points_z < 1)
     points = np.stack([points_x, points_y, points_z], axis=-1)
     points = points[mask].astype(np.float32)
     colors = colors[mask].astype(np.float32)
-
     print(points.min(axis=0), points.max(axis=0))
 
+    # get prediction
     gg, cloud = anygrasp.get_grasp(points, colors, lims)
 
     if len(gg) == 0:

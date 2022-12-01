@@ -1,6 +1,10 @@
 # AnyGrasp SDK
 AnyGrasp SDK for grasp detection & tracking.
 
+[[publication](https://graspnet.net/publications.html)]
+[[dataset](https://graspnet.net/datasets.html)]
+[[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
+
 
 ## Requirements
 - Python 3.6/3.7/3.8/3.9
