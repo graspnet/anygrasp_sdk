@@ -1,10 +1,22 @@
+<img src="https://user-images.githubusercontent.com/12446953/208367719-4ef7922f-4001-41f7-aa9f-076e462d1325.png" width="60%">
+
 # AnyGrasp SDK
 AnyGrasp SDK for grasp detection & tracking.
 
-[[publication](https://graspnet.net/publications.html)]
+
+[[arXiv](https://arxiv.org/abs/2212.08333)]
+[[project](https://graspnet.net/anygrasp.html)]
 [[dataset](https://graspnet.net/datasets.html)]
 [[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
 
+## Video
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/s0SUw1vgtr8/0.jpg)](https://www.youtube.com/watch?v=s0SUw1vgtr8 "AnyGrasp Demo: Cleaning fragments of a broken pot")
+<br>
+**AnyGrasp cleaning fragments of a broken pot**
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/2KM3Lq5VaS4/0.jpg)](https://www.youtube.com/watch?v=2KM3Lq5VaS4 "AnyGrasp Fish Catching Spotlight")
+<br>
+**AnyGrasp catching swimming robot fish**
 
 ## Requirements
 - Python 3.6/3.7/3.8/3.9
@@ -13,7 +25,7 @@ AnyGrasp SDK for grasp detection & tracking.
 
 
 ## Installation
-1. Follow MinkowskiEngine [instructions](https://github.com/NVIDIA/MinkowskiEngine#anaconda) to install [Anaconda](https://www.anaconda.com/), cudatoolkit, Pytorch and MinkowskiEngine. **Note that you need ``export MAX_JOBS=2;`` before ``pip install`` due to [this issue](https://github.com/NVIDIA/MinkowskiEngine/issues/228)**. If PyTorch reports a compatibility issue during program execution, you can re-install PyTorch via Pip instead of Anaconda.
+1. Follow MinkowskiEngine [instructions](https://github.com/NVIDIA/MinkowskiEngine#anaconda) to install [Anaconda](https://www.anaconda.com/), cudatoolkit, Pytorch and MinkowskiEngine. **Note that you need ``export MAX_JOBS=2;`` before ``pip install`` if you are running on an laptop due to [this issue](https://github.com/NVIDIA/MinkowskiEngine/issues/228)**. If PyTorch reports a compatibility issue during program execution, you can re-install PyTorch via Pip instead of Anaconda.
 
 2. Install other requirements from Pip.
 ```bash
@@ -28,7 +40,7 @@ AnyGrasp SDK for grasp detection & tracking.
 
 ## License Registration
    
-Due to the ip issue, currently we can only release the SDK library file of AnyGrasp in a licensed manner. Please get the feature id of your machine and fill in the [chart]() to apply for the license. See [license_registration/README.md](license_registration/README.md) for details.
+Due to the ip issue, currently we can only release the SDK library file of AnyGrasp in a licensed manner. Please get the feature id of your machine and fill in the [form](https://forms.gle/XVV3Eip8njTYJEBo6) to apply for the license. See [license_registration/README.md](license_registration/README.md) for details.
 
 
 ## Demo Code
