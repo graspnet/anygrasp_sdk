@@ -4,15 +4,14 @@
 ```base
     ./license_checker -f
 ```
-- Name a discriminator for the usage, such as device serial number, or collaborator's name.
-- Fill in the [chart]() to apply for license, which requires both feature id and discriminator.
+- Fill in the [form](https://forms.gle/XVV3Eip8njTYJEBo6) to apply for license, which requires the machine feature id.
 - You will get a `.zip` file that contains license. The folder structure is as follows (see [sample_license](sample_license) for example):
 ```base
     license/
        |-- licenseCfg.json
-       |-- [discriminator].public_key
-       |-- [discriminator].signature
-       |-- [discriminator].lic
+       |-- [your_name].public_key
+       |-- [your_name].signature
+       |-- [your_name].lic
 ```
 - You can check license states via
 ```base
