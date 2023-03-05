@@ -14,7 +14,8 @@ AnyGrasp SDK for grasp detection & tracking.
 <br>
 **AnyGrasp cleaning fragments of a broken pot**
 
-[![IMAGE ALT TEXT](https://graspnet.net/images/anygrasp-fish.gif)](https://www.youtube.com/watch?v=2KM3Lq5VaS4 "AnyGrasp Fish Catching Spotlight")
+
+[![IMAGE ALT TEXT](https://user-images.githubusercontent.com/12446953/222949407-01a040d1-0723-4026-ae5a-08631116dde4.gif)](https://www.youtube.com/watch?v=2KM3Lq5VaS4 "AnyGrasp Fish Catching Spotlight")
 <br>
 **AnyGrasp catching swimming robot fish**
 
