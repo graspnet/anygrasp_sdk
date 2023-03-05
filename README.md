@@ -10,11 +10,11 @@ AnyGrasp SDK for grasp detection & tracking.
 [[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
 
 ## Video
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/s0SUw1vgtr8/0.jpg)](https://www.youtube.com/watch?v=s0SUw1vgtr8 "AnyGrasp Demo: Cleaning fragments of a broken pot")
+[![IMAGE ALT TEXT](https://graspnet.net/images/broken.gif)](https://www.youtube.com/watch?v=s0SUw1vgtr8 "AnyGrasp Demo: Cleaning fragments of a broken pot")
 <br>
 **AnyGrasp cleaning fragments of a broken pot**
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/2KM3Lq5VaS4/0.jpg)](https://www.youtube.com/watch?v=2KM3Lq5VaS4 "AnyGrasp Fish Catching Spotlight")
+[![IMAGE ALT TEXT](https://graspnet.net/images/anygrasp-fish.gif)](https://www.youtube.com/watch?v=2KM3Lq5VaS4 "AnyGrasp Fish Catching Spotlight")
 <br>
 **AnyGrasp catching swimming robot fish**
 
