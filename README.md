@@ -3,11 +3,13 @@
 # AnyGrasp SDK
 AnyGrasp SDK for grasp detection & tracking.
 
-
 [[arXiv](https://arxiv.org/abs/2212.08333)]
 [[project](https://graspnet.net/anygrasp.html)]
 [[dataset](https://graspnet.net/datasets.html)]
 [[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
+
+## Update
+* **July 20, 2023** Fix a bug in grasp detection inference code, which may cause no prediction when there are only one or two objects.
 
 ## Video
 [![IMAGE ALT TEXT](https://graspnet.net/images/broken.gif)](https://www.youtube.com/watch?v=s0SUw1vgtr8 "AnyGrasp Demo: Cleaning fragments of a broken pot")
