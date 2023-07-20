@@ -43,20 +43,21 @@ AnyGrasp SDK for grasp detection & tracking.
 
 ## License Registration
    
-Due to the ip issue, currently we can only release the SDK library file of AnyGrasp in a licensed manner. Please get the feature id of your machine and fill in the [form](https://forms.gle/XVV3Eip8njTYJEBo6) to apply for the license. See [license_registration/README.md](license_registration/README.md) for details. If you are interested in code implementation, you can refer to our [baseline version of network](https://github.com/graspnet/graspnet-baseline).
+Due to the ip issue, currently we can only release the SDK library file of AnyGrasp in a licensed manner. Please get the feature id of your machine and fill in the [form](https://forms.gle/XVV3Eip8njTYJEBo6) to apply for the license. See [license_registration/README.md](license_registration/README.md) for details. If you are interested in code implementation, you can refer to our [baseline version of network](https://github.com/graspnet/graspnet-baseline), or a third-party implementation of our [GSNet](https://github.com/graspnet/graspness_unofficial).
 
 
 ## Demo Code
 Now you can run your code that uses AnyGrasp SDK. See [grasp_detection](grasp_detection) and [grasp_tracking](grasp_tracking) for details.
 
+
 ## Citation
 Please cite these papers in your publications if it helps your research:
 
-    @article{fang2022anygrasp,
+    @article{fang2023anygrasp,
       title={AnyGrasp: Robust and Efficient Grasp Perception in Spatial and Temporal Domains},
       author = {Fang, Hao-Shu and Wang, Chenxi and Fang, Hongjie and Gou, Minghao and Liu, Jirong and Yan, Hengxu and Liu, Wenhai and Xie, Yichen and Lu, Cewu},
-      journal={arXiv preprint arXiv:2212.08333},
-      year={2022}
+      journal={IEEE Transactions on Robotics (T-RO)},
+      year={2023}
     }
     
     @inproceedings{fang2020graspnet,
