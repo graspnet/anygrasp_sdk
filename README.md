@@ -9,6 +9,7 @@ AnyGrasp SDK for grasp detection & tracking.
 [[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
 
 ## Update
+* **October 8, 2023** Fix a bug in grasp detection inference code, which may cause partial grasp widths exceeding the constrained range.
 * **July 20, 2023** Fix a bug in grasp detection inference code, which may cause no prediction when there are only one or two objects.
 
 ## Video
