@@ -17,7 +17,7 @@ _ext_headers = glob.glob("{}/include/*".format(_ext_src_root))
 
 setup(
     name='pointnet2',
-    pacakges=['pointnet2'],
+    packages=['pointnet2'],
     package_dir={'pointnet2':'pointnet2'},
     packages=find_packages(),
     ext_modules=[
