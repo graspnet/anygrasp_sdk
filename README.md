@@ -10,9 +10,13 @@ AnyGrasp SDK for grasp detection & tracking.
 
 ## Update
 * **May 7, 2024** Add new features and flags to AnyGrasp detector:
-  * **Dense Predictions (default is False)** Set ``dense_grasp=True`` to enable extremely dense output. It's helpful for some corner cases or prompt-based grasping. **Warning: this mode is designed for special scenarios, leading to higher GPU memory, lower inference speed and lower grasp quality. You can crop the point clouds with your own segmantation masks or 3D bounding boxes to improve the performance.**
-  * **Filtering by Objectness Mask (default is True)** Set ``apply_object_mask=False`` to disable default grasp filtering by objectness masks. This will lead to predictions on backgrounds.
-  * **Collision Detection (default is True)** Set ``collision_detection=False`` to disable default collision detection step.
+  * Dense Predictions (default is False)
+    * Set ``dense_grasp=True`` to enable extremely dense output. It's helpful for some corner cases or prompt-based grasping.
+    * **Warning: this mode is designed for special scenarios, leading to higher GPU memory, lower inference speed and lower grasp quality. You can crop the point clouds with your own segmantation masks or 3D bounding boxes to improve the performance.**
+  * Filtering by Objectness Mask (default is True)
+    * Set ``apply_object_mask=False`` to disable default grasp filtering by objectness masks. This will lead to predictions on backgrounds.
+  * Collision Detection (default is True)
+    * Set ``collision_detection=False`` to disable default collision detection step.
   * These flags are useful for more flexible development, but **we highly recommend to use the default setting in common scenarios**. See [grasp_detection/demo.py](grasp_detection/demo.py) for examples.
 * **October 8, 2023** Fix a bug in grasp detection inference code, which may cause partial grasp widths exceeding the constrained range.
 * **July 20, 2023** Fix a bug in grasp detection inference code, which may cause no prediction when there are only one or two objects.
