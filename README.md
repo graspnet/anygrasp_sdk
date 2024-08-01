@@ -9,6 +9,8 @@ AnyGrasp SDK for grasp detection & tracking.
 [[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
 
 ## Update
+* **August 1, 2024** Support Python 3.10.
+
 * **May 7, 2024** Add new features and flags to AnyGrasp detector:
   * Dense Predictions (default is False)
     * Set ``dense_grasp=True`` to enable extremely dense output. It's helpful for some corner cases or prompt-based grasping.
@@ -18,7 +20,9 @@ AnyGrasp SDK for grasp detection & tracking.
   * Collision Detection (default is True)
     * Set ``collision_detection=False`` to disable default collision detection step.
   * These flags are useful for more flexible development, but **we highly recommend to use the default setting in common scenarios**. See [grasp_detection/demo.py](grasp_detection/demo.py) for examples.
+
 * **October 8, 2023** Fix a bug in grasp detection inference code, which may cause partial grasp widths exceeding the constrained range.
+
 * **July 20, 2023** Fix a bug in grasp detection inference code, which may cause no prediction when there are only one or two objects.
 
 ## Video
