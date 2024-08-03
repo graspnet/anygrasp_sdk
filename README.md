@@ -36,7 +36,7 @@ AnyGrasp SDK for grasp detection & tracking.
 **AnyGrasp catching swimming robot fish**
 
 ## Requirements
-- Python 3.6/3.7/3.8/3.9
+- Python 3.6/3.7/3.8/3.9/3.10
 - PyTorch 1.7.1 with CUDA 11.0
 - [MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) v0.5.4
 
