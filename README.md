@@ -37,12 +37,12 @@ AnyGrasp SDK for grasp detection & tracking.
 
 ## Requirements
 - Python 3.6/3.7/3.8/3.9/3.10
-- PyTorch 1.7.1 with CUDA 11.0
+- PyTorch 1.7.1+ with CUDA 11.x/12.1
 - [MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) v0.5.4
 
 
 ## Installation
-1. Follow MinkowskiEngine [instructions](https://github.com/NVIDIA/MinkowskiEngine#anaconda) to install [Anaconda](https://www.anaconda.com/), cudatoolkit, Pytorch and MinkowskiEngine. **Note that you need ``export MAX_JOBS=2;`` before ``pip install`` if you are running on an laptop due to [this issue](https://github.com/NVIDIA/MinkowskiEngine/issues/228)**. If PyTorch reports a compatibility issue during program execution, you can re-install PyTorch via Pip instead of Anaconda.
+1. Follow MinkowskiEngine [instructions](https://github.com/NVIDIA/MinkowskiEngine#anaconda) to install [Anaconda](https://www.anaconda.com/), cudatoolkit, Pytorch and MinkowskiEngine. If you are using CUDA 12.1 and encounter compatibility issue when installing MinkowskiEngine, you could try [this branch](https://github.com/chenxi-wang/MinkowskiEngine/tree/cuda-12-1). **Note that you need ``export MAX_JOBS=2;`` before ``pip install`` if you are running on an laptop due to [this issue](https://github.com/NVIDIA/MinkowskiEngine/issues/228)**. If PyTorch reports a compatibility issue during program execution, you can re-install PyTorch via Pip instead of Anaconda.
 
 2. Install other requirements from Pip.
 ```bash
