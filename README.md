@@ -79,7 +79,7 @@ cd ../..
    
 Due to the IP issue, currently we can only release the SDK library file of AnyGrasp in a licensed manner. Please get the feature id of your machine and fill in the [form](https://forms.gle/XVV3Eip8njTYJEBo6) to apply for the license. See [license_registration/README.md](license_registration/README.md) for details. **If you are interested in code implementation, you can refer to our [baseline version of network](https://github.com/graspnet/graspnet-baseline), or a third-party implementation of our [GSNet](https://github.com/graspnet/graspness_unofficial).**
 
-We usually reply in 2 work days. If you do not receive the reply in 2 days, **please check the spam folder.**
+We usually reply in 5 work days. If you do not receive the reply in 5 days, **please check the spam folder.**
 
 
 ## Demo Code
