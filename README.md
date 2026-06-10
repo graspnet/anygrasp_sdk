@@ -9,7 +9,7 @@ AnyGrasp SDK for grasp detection & tracking.
 [[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
 
 ## Update
-* **June 10, 2026** We are testing a new license tool, where lib_cxx.so is removed and Python 3.14 is supported. There are slight changes in API and feature id generation. **The current version will be replaced in one or two months.** We are also planning to add more features and support aarch64 in the future. Help us test the new version if you are interested!
+* **June 10, 2026** We are testing a new license tool, where lib_cxx.so and license_checker are removed and Python 3.14 is supported. There are slight changes in API and feature id generation. **The current version will be replaced in one or two months.** We are also planning to add more features and support aarch64 in the future. Help us test the new version if you are interested!
 
 * **November 23, 2025** Support CUDA 12.8 and Python 3.11/3.12/3.13.
 
@@ -81,7 +81,7 @@ cd ../..
    
 Due to the IP issue, currently we can only release the SDK library file of AnyGrasp in a licensed manner. Please get the feature id of your machine and fill in the [form](https://forms.gle/XVV3Eip8njTYJEBo6) to apply for the license. See [license_registration/README.md](license_registration/README.md) for details. **If you are interested in code implementation, you can refer to our [baseline version of network](https://github.com/graspnet/graspnet-baseline), or a third-party implementation of our [GSNet](https://github.com/graspnet/graspness_unofficial).**
 
-We usually reply in 5 work days. If you do not receive the reply in 5 days, **please check the spam folder.**
+We usually reply in 5 workdays. If you do not receive the reply in 5 workdays, **please check the spam folder.**
 
 
 ## Demo Code
