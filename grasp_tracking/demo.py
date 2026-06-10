@@ -5,7 +5,7 @@ import open3d as o3d
 from PIL import Image
 from graspnetAPI import GraspGroup
 
-from tracker import AnyGraspTracker
+from tracker import create_tracker
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--checkpoint_path', required=True, help='Model checkpoint path')
@@ -58,8 +58,10 @@ def get_data(data_dir, index):
 
 def demo(data_dir_list, indices):
     # intialization
-    anygrasp_tracker = AnyGraspTracker(cfgs)
-    anygrasp_tracker.load_net()
+    tracker = create_tracker(cfgs)
+    if not tracker:
+        print("Failed to create detector!")
+        return
 
     grasp_ids = [0]
     vis = o3d.visualization.Visualizer()
@@ -67,7 +69,7 @@ def demo(data_dir_list, indices):
     for i in range(len(indices)):
         # get prediction
         points, colors = get_data(data_dir_list, indices[i])
-        target_gg, curr_gg, target_grasp_ids, corres_preds = anygrasp_tracker.update(points, colors, grasp_ids)
+        target_gg, curr_gg, target_grasp_ids, corres_preds = tracker.update(points, colors, grasp_ids)
 
         if i == 0:
             # select grasps on objects to track for the 1st frame

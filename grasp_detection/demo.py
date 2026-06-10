@@ -5,7 +5,7 @@ import numpy as np
 import open3d as o3d
 from PIL import Image
 
-from gsnet import AnyGrasp
+from gsnet import create_detector
 from graspnetAPI import GraspGroup
 
 parser = argparse.ArgumentParser()
@@ -18,8 +18,10 @@ cfgs = parser.parse_args()
 cfgs.max_gripper_width = max(0, min(0.1, cfgs.max_gripper_width))
 
 def demo(data_dir):
-    anygrasp = AnyGrasp(cfgs)
-    anygrasp.load_net()
+    detector = create_detector(cfgs)
+    if not detector:
+        print("Failed to create detector!")
+        return
 
     # get data
     colors = np.array(Image.open(os.path.join(data_dir, 'color.png')), dtype=np.float32) / 255.0
@@ -48,7 +50,7 @@ def demo(data_dir):
     colors = colors[mask].astype(np.float32)
     print(points.min(axis=0), points.max(axis=0))
 
-    gg, cloud = anygrasp.get_grasp(points, colors, lims=lims, apply_object_mask=True, dense_grasp=False, collision_detection=True)
+    gg, cloud = detector.get_grasp(points, colors, lims=lims, apply_object_mask=True, dense_grasp=False, collision_detection=True)
 
     if len(gg) == 0:
         print('No Grasp detected after collision detection!')
