@@ -2,5 +2,4 @@ numpy
 Pillow
 scipy
 tqdm
-graspnetAPI
 open3d
