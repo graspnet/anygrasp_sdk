@@ -100,7 +100,7 @@ def demo_default(detector, points, colors, vis=False):
         render_results(points, colors, gg, plot_top1=True)
 
 def demo_region_steering(detector, points, colors, seg_mask, object_id, dense_grasp=False, collision_detection=True, vis=False):
-    """Steering AnyGrasp with spcific region mask."""
+    """Steer AnyGrasp with specific region mask."""
     gg = predict_with_configs(
         detector,
         points,
@@ -113,7 +113,7 @@ def demo_region_steering(detector, points, colors, seg_mask, object_id, dense_gr
         render_results(points, colors, gg)
 
 def demo_approach_steering(detector, points, colors, approach_steering=[0,0,1], approach_thresh=0, vis=False):
-    """Steering AnyGrasp with spcific approach vector."""
+    """Steer AnyGrasp with specific approach vector."""
     gg = predict_with_configs(
         detector,
         points,
@@ -125,7 +125,7 @@ def demo_approach_steering(detector, points, colors, approach_steering=[0,0,1], 
         render_results(points, colors, gg)
 
 def demo_workspace_filtering(detector, points, colors, lims, vis=False):
-    """Steering AnyGrasp with spcific workspace range."""
+    """Steer AnyGrasp with specific workspace range."""
     workspace_mask = (points[:,0] >= lims[0]) & (points[:,0] <= lims[1])\
                     & (points[:,1] >= lims[2]) & (points[:,1] <= lims[3])\
                     & (points[:,2] >= lims[4]) & (points[:,2] <= lims[5])

@@ -14,4 +14,8 @@
     |-- [your_name].signature
     |-- [your_name].lic
     ```
+- To validate your license, unzip and put your license folder here as "license", and run
+    ```base
+    python -c "from gsnet import check_license; check_license('license')"
+    ```
 - Put the license folder under [grasp_detection](../grasp_detection) and [grasp_tracking](../grasp_tracking) to execute the demo.
