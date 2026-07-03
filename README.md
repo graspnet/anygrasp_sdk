@@ -41,7 +41,7 @@ AnyGrasp SDK for grasp detection & tracking.
 
 ## Requirements
 - Python 3.6-3.14
-- PyTorch 1.7.1+ with CUDA 11.x/12.x
+- PyTorch 1.7.1+ with CUDA 11.x/12.x/13.x
 - [MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine) v0.5.4
 
 
@@ -56,10 +56,15 @@ export CUDA_HOME=/path/to/cuda
 git clone git@github.com:chenxi-wang/MinkowskiEngine.git
 cd MinkowskiEngine
 
-# Uncomment the following line if you are using CUDA 12.x.
+## Uncomment the following line if you are using CUDA 12.x.
 # git checkout cuda-12-1
 
-# Uncomment the following line if you are using CUDA 12.8.
+## Uncomment the following line if you are using CUDA 13.x.
+# git checkout cuda-13
+
+# Uncomment the following line if you are using CUDA 12.8+.
+## The path of shared_ptr_base.h may change due to different OS versions, and you can locate the file path if it could not be found.
+## For example, in Ubuntu 24.04, the path may be '/usr/include/c++/13/bits/shared_ptr_base.h'
 # sed -i 's/\bauto __raw = __to_address(__r.get());/auto __raw = std::__to_address(__r.get());/' /usr/include/c++/11/bits/shared_ptr_base.h
 
 python setup.py install --blas_include_dirs=${CONDA_PREFIX}/include --blas_library_dirs=${CONDA_PREFIX}/lib --blas=openblas
