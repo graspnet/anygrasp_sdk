@@ -13,7 +13,7 @@ This demo shows the usage of AnyGrasp detection SDK. Note that `gsnet.so` and li
 
 ## Execution
 
-Run your code like `demo.py` or any desired applications that uses `gsnet.so`. See `demo.py` for more details.
+Run your code like `demo.py` or any desired applications that uses `gsnet.so`. See `demo.py` and `USAGE.md` for more details.
 ```bash
     sh demo.sh
 ```
