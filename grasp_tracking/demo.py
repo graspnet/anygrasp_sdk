@@ -5,12 +5,12 @@ import open3d as o3d
 from PIL import Image
 from graspnetAPI import GraspGroup
 
-from tracker import AnyGraspTracker
+from tracker import create_tracker
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--checkpoint_path', required=True, help='Model checkpoint path')
 parser.add_argument('--filter', type=str, default='oneeuro', help='Filter to smooth grasp parameters(rotation, width, depth). [oneeuro/kalman/none]')
-parser.add_argument('--debug', action='store_true', help='Enable visualization')
+parser.add_argument('--vis', action='store_true', help='Enable visualization')
 cfgs = parser.parse_args()
 
 class CameraInfo:
@@ -51,23 +51,27 @@ def get_data(data_dir, index):
     # get point cloud
     points = create_point_cloud_from_depth_image(depths, camera)
     mask = (points[:,:,2] > 0) & (points[:,:,2] < 1.5)
-    points = points[mask]
-    colors = colors[mask]
+    points = points[mask].astype(np.float32)
+    colors = colors[mask].astype(np.float32)
 
     return points, colors
 
 def demo(data_dir_list, indices):
     # intialization
-    anygrasp_tracker = AnyGraspTracker(cfgs)
-    anygrasp_tracker.load_net()
+    tracker = create_tracker(cfgs)
+    if not tracker:
+        print("Failed to create detector!")
+        return
+
+    if cfgs.vis:
+        vis = o3d.visualization.Visualizer()
+        vis.create_window(height=720, width=1280)
 
     grasp_ids = [0]
-    vis = o3d.visualization.Visualizer()
-    vis.create_window(height=720, width=1280)
     for i in range(len(indices)):
         # get prediction
         points, colors = get_data(data_dir_list, indices[i])
-        target_gg, curr_gg, target_grasp_ids, corres_preds = anygrasp_tracker.update(points, colors, grasp_ids)
+        target_gg, curr_gg, target_grasp_ids, corres_preds = tracker.update(points, colors, grasp_ids)
 
         if i == 0:
             # select grasps on objects to track for the 1st frame
@@ -81,7 +85,7 @@ def demo(data_dir_list, indices):
         print(i, target_grasp_ids)
 
         # visualization
-        if cfgs.debug:
+        if cfgs.vis:
             trans_mat = np.array([[1,0,0,0],[0,1,0,0],[0,0,-1,0],[0,0,0,1]])
             cloud = o3d.geometry.PointCloud()
             cloud.points = o3d.utility.Vector3dVector(points)

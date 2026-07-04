@@ -3,6 +3,8 @@
 *.o
 *.so
 *.egg
+*.tar
 .DS_Store
+build/
 .TimeRecord
-license
+license*
