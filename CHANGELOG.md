@@ -1,5 +1,11 @@
 # AnyGrasp SDK Change Log
 
+* **July 4, 2026** We update AnyGrasp SDK with the following features:
+  * Steer AnyGrasp using spcific regions and approach vectors. This provides greater flexibility for task-oriented grasping and downstream manipulation tasks. See [USAGE.md](grasp_detection/USAGE.md) for details.
+  * Added a new license tool. The previous `lib_cxx.so` and `license_checker` have been removed. Follow the [license instructions](license_registration/README.md) to apply for a license.
+  * Added support for Python 3.14 and CUDA 13. See the [installation guide](#installation) for instructions on installing MinkowskiEngine with CUDA 13.
+  * **Note: The old license tool is no longer supported.** License applications with old feature IDs submitted before July 4, 2026, will still be processed. Deployed machines can continue using the previous SDK. Please use the new license tool for the updated SDK.
+
 * **June 10, 2026** We are testing AnyGrasp steering and a new license tool, where lib_cxx.so and license_checker are removed and Python 3.14 is supported. There are slight changes in API and feature id generation. **The current version will be replaced in one month.** If you need no updates for the deployed machines in the future, you do not need to apply for a new license. We are also planning to support aarch64 in the future. Help us test the new version if you are interested!
 
 * **November 23, 2025** Support CUDA 12.8 and Python 3.11/3.12/3.13.

@@ -1,4 +1,4 @@
-# AnyGrasp Detection SDK Usage
+# AnyGrasp Detector Usage
 
 AnyGrasp predicts parallel-jaw grasps from an unorganized 3D point cloud. The
 main API consists of `create_detector(config)` for initialization and
