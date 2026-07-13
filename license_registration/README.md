@@ -1,8 +1,8 @@
 # License Registration
 
-- Get the feature id of your working machine directly using the SDK. The format of the feature id should be "N12345678900987654321".
+- Get the feature id of your working machine directly using the SDK. The format of the feature id should be "N12345678900987654321". Select the SDK version based on your architecture (x86_64/aarch64) and Python version (>=3.6). For example, if you use x86_64 and Python 3.6:
     ```base
-    cp ../grasp_detection/gsnet_versions/gsnet.cpython-36m-x86_64-linux-gnu.so gsnet.so
+    cp ../grasp_detection/gsnet_versions/x86_64/gsnet.cpython-36m-x86_64-linux-gnu.so gsnet.so
     python -c "from gsnet import get_feature_id; print(get_feature_id())"
     ```
 - Fill in the [form](https://forms.gle/XVV3Eip8njTYJEBo6) to apply for license, which requires the machine feature id. **Note: if there is a "%" at the end of the machine id, delete it when filling the form.**
