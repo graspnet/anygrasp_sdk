@@ -9,6 +9,7 @@ AnyGrasp SDK for grasp detection & tracking.
 [[graspnetAPI](https://github.com/graspnet/graspnetAPI)]
 
 ## Update
+* **July 13, 2026** We are testing the aarch64 version SDK. Try it out if you have interest. See the [dev](https://github.com/graspnet/anygrasp_sdk/tree/dev) branch for details.
 * **July 4, 2026** We update AnyGrasp SDK with the following features:
   * Steer AnyGrasp using specific regions and approach vectors. This provides greater flexibility for task-oriented grasping and downstream manipulation tasks. See [USAGE.md](grasp_detection/USAGE.md) for details.
   * Added a new license tool. The previous `lib_cxx.so` and `license_checker` have been removed. Follow the [license instructions](license_registration/README.md) to apply for a license.
